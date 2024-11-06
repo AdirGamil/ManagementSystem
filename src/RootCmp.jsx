@@ -7,6 +7,7 @@ import { AdminPanel } from './pages/AdminPanel'
 import { Coupons } from './pages/Coupons'
 import { Login } from './pages/Login'
 import { Users } from './pages/Users'
+import { Reports } from './pages/Reports'
 
 export function RootCmp() {
   return (
@@ -20,6 +21,7 @@ export function RootCmp() {
             <Route path="/coupons" element={<Coupons />} />
             <Route path="/login" element={<Login />} />
             <Route path="/users" element={<Users />} />
+            <Route path="/reports" element={<Reports />} />
           </Routes>
         </main>
         <Footer />
