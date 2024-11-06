@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router'
 import { Toaster, toast } from 'react-hot-toast'
 
 export function Login() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -11,6 +13,8 @@ export function Login() {
     if (username === 'admin' && password === 'admin') {
       toast.success('Welcome!')
       console.log('Login success')
+
+      navigate('/admin')
     } else {
       toast.error('Wrong username or password')
       console.log('Login failed')
