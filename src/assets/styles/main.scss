@@ -7,3 +7,33 @@
 @import 'basics/layout';
 @import 'basics/base';
 
+// Cmps
+@import 'cmps/Footer';
+@import 'cmps/Navbar';
+
+// Coupons System
+@import 'cmps/CouponSystem/CouponEdit';
+@import 'cmps/CouponSystem/CouponList';
+@import 'cmps/CouponSystem/CouponPreview';
+@import 'cmps/CouponSystem/CouponInput';
+
+// Reports System
+@import 'cmps/ReportSystem/ReportList';
+@import 'cmps/ReportSystem/ReportPreview';
+@import 'cmps/ReportSystem/ReportFilter';
+@import 'cmps/ReportSystem/ExcelButton';
+
+// Users System
+@import 'cmps/UserSystem/UserList';
+@import 'cmps/UserSystem/UserPreview';
+@import 'cmps/UserSystem/UserEdit';
+
+// Pages
+@import 'pages/Home';
+@import 'pages/AdminPanel';
+@import 'pages/Coupons';
+@import 'pages/Users';
+@import 'pages/Login';
+@import 'pages/Reports';
+
+
