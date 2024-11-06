@@ -6,7 +6,7 @@ export function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h1>Navbar</h1>
+        <h1>Logo</h1>
       </div>
       <ul className="navbar-links">
         <li>

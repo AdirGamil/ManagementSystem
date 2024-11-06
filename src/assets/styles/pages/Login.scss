@@ -1,0 +1,58 @@
+.login {
+    max-width: rem(320px);
+    margin: rem(30px) auto;
+    padding: rem(32px);
+    border: rem(1px) solid #ddd;
+    border-radius: rem(8px);
+    background-color: $color-background;
+    box-shadow: 0 rem(4px) rem(8px) rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    &-title {
+      margin-bottom: rem(24px);
+      color: $color-text;
+      font-size: rem(28px);
+    }
+  
+    &-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &-label {
+      margin-bottom: rem(8px);
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    &-input,
+    &-button {
+      width: 100%;
+      padding: rem(10px);
+      margin-bottom: rem(24px);
+      border-radius: rem(4px);
+      border: rem(1px) solid #ccc;
+    }
+  
+    &-input {
+      &:focus {
+        outline: none;
+        border-color: $color-primary;
+        box-shadow: 0 0 rem(4px) rgba(0, 123, 255, 0.3);
+      }
+    }
+  
+    &-button {
+      background-color: $color-primary;
+      color: $color-white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: $color-hover-primary;
+      }
+    }
+  }
+  
