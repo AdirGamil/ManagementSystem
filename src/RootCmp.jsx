@@ -1,20 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { AniIndex } from './pages/AniIndex'
-import { AniFooter } from './cmps/AniFooter'
-import { AniHeader } from './cmps/AniHeader'
+import { Home } from './pages/Home'
+import { Footer } from './cmps/Footer'
+import { Navbar } from './cmps/Navbar.jsx'
 
 export function RootCmp() {
   return (
     <Router>
       <section className="main-container">
-        <AniHeader/>
+        <Navbar/>
         <main>
           <Routes>
-            <Route path="" element={<AniIndex />} />
+            <Route path="" element={<Home />} />
           </Routes>
         </main>
-        <AniFooter/>
+        <Footer/>
       </section>
     </Router>
   )
