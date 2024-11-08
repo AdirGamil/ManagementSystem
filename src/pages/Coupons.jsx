@@ -1,7 +1,10 @@
+import { CouponList } from '../cmps/CouponsSystem/CouponList'
+
 export function Coupons() {
-    return (
-        <div>
-           hello from Coupons
-        </div>
-    )
+  return (
+    <div className="coupons">
+      <h2>Coupons Management</h2>
+      <CouponList />
+    </div>
+  )
 }
