@@ -1,44 +1,73 @@
+// Mobile First
 .navbar {
+  background-color: $color-background;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  background-color: $color-background;
-  height: rem(60px);
+  padding: rem(16px) rem(20px);
 
-  .navbar-logo {
-    font-weight: bold;
-    color: $color-text;
+  &-logo {
+    color: $color-primary;
+  }
+
+  &-menu-icon {
+    font-size: rem(24px);
   }
 
   .navbar-links {
-    display: flex;
-    align-items: center;
-    gap: rem(20px);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: rem(4px);
+    top: rem(60px);
+    padding: rem(12px);
+    text-align: center;
+    gap: rem(8px);
+    background-color: $color-background;
+    border-radius: rem(8px);
+
+    &.open {
+      display: flex;
+    }
 
     a {
       font-weight: 500;
 
-      &:hover {
-        color: $color-hover;
-      }
-
       &.active {
-        font-weight: bold;
         color: $color-primary;
+        font-weight: bold;
+      }
+    }
+
+    .navbar-login {
+      margin-top: rem(8px);
+
+      a {
+        padding: rem(8px) rem(16px);
+        border: rem(1px) solid $color-primary;
+        border-radius: rem(8px);
+        color: $color-primary;
+        font-weight: bold;
       }
     }
   }
 
-  .navbar-login {
-    a {
-      &:hover {
+  @media (min-width: 768px) {
+    &-menu-icon {
+      display: none;
+    }
+
+    .navbar-links {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      gap: rem(20px);
+
+      a:hover {
         color: $color-hover;
       }
-
-      &.active {
-        font-weight: bold;
-        color: $color-primary;
+      .navbar-login {
+        margin-top: 0;
       }
     }
   }
