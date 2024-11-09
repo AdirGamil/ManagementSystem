@@ -1,0 +1,46 @@
+.coupon-input {
+    max-width: rem(320px);
+    margin: 0 auto;
+    padding: rem(20px);
+    border: rem(1px) solid #ddd;
+    border-radius: rem(8px);
+    background-color: $color-background;
+    box-shadow: 0 rem(4px) rem(8px) rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    .coupon-title {
+      font-size: rem(20px);
+      color: $color-primary;
+      margin-bottom: rem(16px);
+    }
+  
+    .coupon-code-input {
+      width: 100%;
+      padding: rem(10px);
+      margin-bottom: rem(12px);
+      border: rem(1px) solid $color-text;
+      border-radius: rem(4px);
+  
+      &:focus {
+        outline: none;
+        border-color: $color-primary;
+        box-shadow: 0 0 rem(4px) rgba(0, 123, 255, 0.3);
+      }
+    }
+  
+    .apply-button {
+      padding: rem(10px) rem(20px);
+      background-color: $color-primary;
+      color: $color-white;
+      font-weight: bold;
+      border: none;
+      border-radius: rem(4px);
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: $color-hover-primary;
+      }
+    }
+  }
+  
