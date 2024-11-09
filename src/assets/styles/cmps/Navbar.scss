@@ -1,13 +1,13 @@
 // Mobile First
 .navbar {
-  background-color: $color-background;
+  background-color: $clr-background;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: rem(16px) rem(20px);
 
   &-logo {
-    color: $color-primary;
+    color: $clr-primary;
   }
 
   &-menu-icon {
@@ -23,7 +23,7 @@
     padding: rem(12px);
     text-align: center;
     gap: rem(8px);
-    background-color: $color-background;
+    background-color: $clr-background;
     border-radius: rem(8px);
 
     &.open {
@@ -34,7 +34,7 @@
       font-weight: 500;
 
       &.active {
-        color: $color-primary;
+        color: $clr-primary;
         font-weight: bold;
       }
     }
@@ -44,9 +44,9 @@
 
       a {
         padding: rem(8px) rem(16px);
-        border: rem(1px) solid $color-primary;
+        border: rem(1px) solid $clr-primary;
         border-radius: rem(8px);
-        color: $color-primary;
+        color: $clr-primary;
         font-weight: bold;
       }
     }
@@ -64,7 +64,7 @@
       gap: rem(20px);
 
       a:hover {
-        color: $color-hover;
+        color: $clr-hover;
       }
       .navbar-login {
         margin-top: 0;

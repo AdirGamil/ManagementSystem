@@ -1,0 +1,69 @@
+.coupon-edit-dialog {
+  width: rem(400px);
+  max-width: 90%;
+  padding: rem(20px);
+  border: none;
+  border-radius: rem(8px);
+  background-color: white;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 rem(4px) rem(8px) rgba(0, 0, 0, 0.2);
+
+  .coupon-edit-content {
+    position: relative;
+  }
+
+  .close-button {
+    position: absolute;
+    top: rem(10px);
+    right: rem(10px);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(20px);
+  }
+
+  .save-button {
+    background-color: $clr-save-btn;
+    color: $clr-white;
+    padding: rem(10px) rem(20px);
+    border: none;
+    cursor: pointer;
+    border-radius: rem(4px);
+  }
+
+  .delete-button {
+    background-color: $clr-delete-btn;
+    color: $clr-white;
+    padding: rem(10px) rem(20px);
+    border: none;
+    cursor: pointer;
+    border-radius: rem(4px);
+  }
+
+  label {
+    display: block;
+    margin-bottom: rem(10px);
+    font-weight: bold;
+  }
+
+  input[type='text'],
+  input[type='number'],
+  input[type='date'],
+  select {
+    width: 100%;
+    padding: rem(8px);
+    margin-top: rem(5px);
+    margin-bottom: rem(15px);
+    border: rem(1px) solid #ddd;
+    border-radius: rem(4px);
+  }
+}

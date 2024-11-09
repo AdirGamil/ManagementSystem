@@ -4,13 +4,13 @@
     padding: rem(32px);
     border: rem(1px) solid #ddd;
     border-radius: rem(8px);
-    background-color: $color-background;
+    background-color: $clr-background;
     box-shadow: 0 rem(4px) rem(8px) rgba(0, 0, 0, 0.1);
     text-align: center;
   
     &-title {
       margin-bottom: rem(24px);
-      color: $color-text;
+      color: $clr-text;
       font-size: rem(28px);
     }
   
@@ -37,21 +37,21 @@
     &-input {
       &:focus {
         outline: none;
-        border-color: $color-primary;
+        border-color: $clr-primary;
         box-shadow: 0 0 rem(4px) rgba(0, 123, 255, 0.3);
       }
     }
   
     &-button {
-      background-color: $color-primary;
-      color: $color-white;
+      background-color: $clr-primary;
+      color: $clr-white;
       border: none;
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s;
   
       &:hover {
-        background-color: $color-hover-primary;
+        background-color: $clr-hover-primary;
       }
     }
   }
