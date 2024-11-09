@@ -1,6 +1,17 @@
-export function CouponPreview({ coupon }) {
-  const isAdmin = true
+import { toast } from 'react-hot-toast'
 
+export function CouponPreview({ coupon }) {
+  const isAdmin = true //Change to false to hide admin details
+
+  function handleCopyCode() {
+    try {
+      navigator.clipboard.writeText(coupon.code)
+      toast.success('Coupon code copied!')
+    } catch (error) {
+      toast.error('Failed to copy coupon code')
+      console.error(error)
+    }
+  }
   return (
     <div className="coupon-preview">
       <h4>
@@ -9,6 +20,7 @@ export function CouponPreview({ coupon }) {
           : `$${coupon.discountValue} off`}
       </h4>
       <p>Code: {coupon.code}</p>
+      <button onClick={handleCopyCode}>Copy Code</button>
       {isAdmin && (
         <>
           <p>Description: {coupon.description}</p>
