@@ -14,7 +14,7 @@
   {
     "id": 2,
     "code": "SAVE20",
-    "description": "Save $20 on purchases over $100",
+    "description": "Save $20 over $100",
     "discountType": "amount",
     "discountValue": 20,
     "expiryDate": "12/12/2024",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "code": "FREESHIP",
-    "description": "Free shipping on orders over $50",
+    "description": "Free shipping over $50",
     "discountType": "amount",
     "discountValue": 0,
     "expiryDate": "3/15/2025",
