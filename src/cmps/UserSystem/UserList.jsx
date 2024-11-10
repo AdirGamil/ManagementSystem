@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { UserPreview } from './UserPreview'
 
 export function UserList({ users }) {
