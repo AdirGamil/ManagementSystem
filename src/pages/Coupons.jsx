@@ -21,7 +21,7 @@ const initialCouponData = {
 export function Coupons() {
   const [coupons, setCoupons] = useState([])
   const [isAddOpen, setIsAddOpen] = useState(false)
-  const isAdmin = true
+  const isAdmin = true //! Change this to false if not an admin
 
   useEffect(() => {
     async function fetchCoupons() {
