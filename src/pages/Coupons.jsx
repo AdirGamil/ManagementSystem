@@ -41,7 +41,7 @@ export function Coupons() {
   return (
     <div className="coupons">
       <CouponInput />
-      <CouponList coupons={coupons} />
+      <CouponList coupons={coupons} isAdmin={isAdmin} />
 
       {isAdmin && (
         <button

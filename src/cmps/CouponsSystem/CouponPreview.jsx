@@ -13,7 +13,7 @@ function copyCouponCode(code) {
   }
 }
 
-export function CouponPreview({ coupon, isAdmin = true }) {
+export function CouponPreview({ coupon, isAdmin }) {
   const [isEditOpen, setIsEditOpen] = useState(false)
 
   return (
