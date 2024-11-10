@@ -1,46 +1,40 @@
 .coupon-input {
-    max-width: rem(320px);
-    margin: 0 auto;
-    padding: rem(20px);
-    border: rem(1px) solid #ddd;
-    border-radius: rem(8px);
+  margin-top: rem(20px);
+
+  .coupon-title {
+    margin-bottom: rem(8px);
+    color: $clr-text;
+  }
+
+  .coupon-container {
+    display: flex;
+    gap: rem(8px);
+  }
+
+  .coupon-code-input {
+    flex: 1;
+    padding: rem(10px);
     background-color: $clr-background;
-    box-shadow: 0 rem(4px) rem(8px) rgba(0, 0, 0, 0.1);
-    text-align: center;
-  
-    .coupon-title {
-      font-size: rem(20px);
-      color: $clr-primary;
-      margin-bottom: rem(16px);
-    }
-  
-    .coupon-code-input {
-      width: 100%;
-      padding: rem(10px);
-      margin-bottom: rem(12px);
-      border: rem(1px) solid $clr-text;
-      border-radius: rem(4px);
-  
-      &:focus {
-        outline: none;
-        border-color: $clr-primary;
-        box-shadow: 0 0 rem(4px) rgba(0, 123, 255, 0.3);
-      }
-    }
-  
-    .apply-button {
-      padding: rem(10px) rem(20px);
-      background-color: $clr-primary;
-      color: $clr-white;
-      font-weight: bold;
-      border: none;
-      border-radius: rem(4px);
-      cursor: pointer;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background-color: $clr-hover-primary;
-      }
+    border: rem(1px) solid $clr-primary;
+    border-radius: rem(4px);
+
+    &:focus {
+      outline: none;
     }
   }
-  
+
+  .apply-button {
+    padding: rem(10px) rem(20px);
+    background-color: $clr-primary;
+    color: $clr-white;
+    font-weight: bold;
+    
+    border-radius: rem(5px);
+    
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $clr-hover-primary;
+    }
+  }
+}

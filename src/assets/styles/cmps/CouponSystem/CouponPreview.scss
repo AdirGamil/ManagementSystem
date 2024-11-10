@@ -28,12 +28,12 @@
 
   .copy-button {
     padding: rem(8px) rem(16px);
-    border: none;
+
     border-radius: rem(4px);
     background-color: $clr-primary;
     color: $clr-white;
     font-weight: bold;
-    cursor: pointer;
+    
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -41,8 +41,6 @@
     }
   }
 
-
-  
   .admin-info {
     margin-top: rem(16px);
     padding: rem(12px);
@@ -64,15 +62,14 @@
     top: rem(8px);
     right: rem(8px);
     color: $clr-primary;
-    background-color: transparent;
-    border: none;
+
     border-radius: 50%;
     width: rem(22px);
     height: rem(22px);
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    
     transition: color 0.3s ease, transform 0.2s ease;
 
     &:hover {

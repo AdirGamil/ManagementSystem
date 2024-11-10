@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import { CouponList } from '../cmps/CouponsSystem/CouponList'
-import { CouponInput } from '../cmps/CouponsSystem/CouponInput'
 import { CouponEdit } from '../cmps/CouponsSystem/CouponEdit'
 import { FaPlus } from 'react-icons/fa'
+import { OrderSummary } from '../cmps/CouponsSystem/OrderSummary'
 
 const initialCouponData = {
   code: '',
@@ -18,11 +18,19 @@ const initialCouponData = {
   createdAt: new Date().toLocaleString(),
 }
 
+/**
+ * Coupons page component displays a list of coupons and allows
+ * admins to add new coupons.
+ */
 export function Coupons() {
   const [coupons, setCoupons] = useState([])
   const [isAddOpen, setIsAddOpen] = useState(false)
   const isAdmin = true //! Change this to false if not an admin
 
+  /**
+   * Fetches the coupons from the data file and sets the state.
+   * Called when the component mounts.
+   */
   useEffect(() => {
     async function fetchCoupons() {
       try {
@@ -40,7 +48,7 @@ export function Coupons() {
 
   return (
     <div className="coupons">
-      <CouponInput />
+      <OrderSummary />
       <CouponList coupons={coupons} isAdmin={isAdmin} />
 
       {isAdmin && (

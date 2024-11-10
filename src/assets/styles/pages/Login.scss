@@ -38,16 +38,13 @@
       &:focus {
         outline: none;
         border-color: $clr-primary;
-        box-shadow: 0 0 rem(4px) rgba(0, 123, 255, 0.3);
       }
     }
   
     &-button {
       background-color: $clr-primary;
       color: $clr-white;
-      border: none;
       font-weight: bold;
-      cursor: pointer;
       transition: background-color 0.3s;
   
       &:hover {
