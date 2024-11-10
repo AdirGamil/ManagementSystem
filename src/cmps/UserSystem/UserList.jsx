@@ -1,18 +1,11 @@
 import { useState } from 'react'
 import { UserPreview } from './UserPreview'
-import { UserEdit } from './UserEdit'
 
 export function UserList({ users }) {
-  const [isEditOpen, setIsEditOpen] = useState(false)
-
-  function handleAddUser() {
-    setIsEditOpen(true)
-  }
-
   return (
     <div className="user-list">
       <h2>User Management</h2>
-      <button onClick={handleAddUser} className="add-user-button">
+      <button className="add-user-button">
         Add User
       </button>
 
@@ -25,8 +18,6 @@ export function UserList({ users }) {
           />
         ))}
       </div>
-
-      {isEditOpen && <UserEdit onClose={() => setIsEditOpen(false)} />}
     </div>
   )
 }
