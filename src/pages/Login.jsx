@@ -10,6 +10,11 @@ export function Login() {
   function handleSubmit(e) {
     e.preventDefault()
 
+    if (!username || !password) {
+      toast.error('Please fill in all fields')
+      return
+    }
+
     if (username === 'admin' && password === 'admin') {
       toast.success('Welcome!')
       console.log('Login success')
