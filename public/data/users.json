@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "role": "Admin"
+  },
+  {
+    "id": 2,
+    "username": "editor_1",
+    "role": "Editor"
+  },
+  {
+    "id": 3,
+    "username": "editor_2",
+    "role": "Editor"
+  },
+  {
+    "id": 4,
+    "username": "viewer_1",
+    "role": "User"
+  },
+  {
+    "id": 5,
+    "username": "viewer_2",
+    "role": "User"
+  },
+  {
+    "id": 6,
+    "username": "manager_1",
+    "role": "Admin"
+  },
+  {
+    "id": 7,
+    "username": "manager_2",
+    "role": "Admin"
+  },
+  {
+    "id": 8,
+    "username": "content_creator_1",
+    "role": "Editor"
+  },
+  {
+    "id": 9,
+    "username": "content_creator_2",
+    "role": "Editor"
+  },
+  {
+    "id": 10,
+    "username": "viewer_3",
+    "role": "User"
+  }
+]

@@ -24,14 +24,14 @@
   }
 
   .save-button {
-    background-color: $clr-save-btn;
+    background-color: $clr-green-btn;
     color: $clr-white;
     padding: rem(10px) rem(20px);
     border-radius: rem(4px);
   }
 
   .delete-button {
-    background-color: $clr-delete-btn;
+    background-color: $clr-red-btn;
     color: $clr-white;
     padding: rem(10px) rem(20px);
     border-radius: rem(4px);
@@ -51,7 +51,7 @@
     padding: rem(8px);
     margin-top: rem(5px);
     margin-bottom: rem(15px);
-    border: rem(1px) solid $clr-hover;
+    border: rem(1px) solid $clr-gray;
     border-radius: rem(4px);
   }
 }

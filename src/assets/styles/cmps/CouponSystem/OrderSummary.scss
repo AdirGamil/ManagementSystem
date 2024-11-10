@@ -19,7 +19,7 @@
     color: $clr-text;
 
     &:not(:last-child) {
-      border-bottom: rem(1px) solid lighten($clr-hover, 40%);
+      border-bottom: rem(1px) solid lighten($clr-gray, 40%);
     }
 
     p {

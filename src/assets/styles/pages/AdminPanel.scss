@@ -1,0 +1,52 @@
+.admin-panel {
+  max-width: rem(600px);
+  margin: rem(32px) auto;
+  padding: rem(32px);
+  background: $clr-background;
+  border-radius: rem(8px);
+  text-align: center;
+
+  h2 {
+    font-size: rem(24px);
+    color: $clr-text;
+    margin-bottom: rem(16px);
+  }
+
+  p {
+    color: $clr-gray;
+  }
+
+  .admin-actions {
+    display: flex;
+    justify-content: center;
+    gap: rem(16px);
+    margin: rem(16px) 0;
+
+    .admin-link {
+      padding: rem(8px) rem(16px);
+      background-color: $clr-primary;
+      color: $clr-white;
+      border-radius: rem(4px);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $clr-hover-primary;
+      }
+    }
+  }
+
+  .logout-button {
+    margin-top: rem(16px);
+    padding: rem(8px) rem(16px);
+    background-color: $clr-red-btn;
+    color: $clr-white;
+    border: none;
+    border-radius: rem(4px);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($clr-red-btn, 10%);
+    }
+  }
+}

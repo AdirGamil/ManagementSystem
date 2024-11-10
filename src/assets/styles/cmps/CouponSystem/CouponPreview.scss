@@ -33,7 +33,7 @@
     background-color: $clr-primary;
     color: $clr-white;
     font-weight: bold;
-    
+
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -46,7 +46,7 @@
     padding: rem(12px);
     background-color: $clr-background;
     border-radius: rem(8px);
-    border: rem(1px) solid $clr-hover;
+    border: rem(1px) solid $clr-gray;
 
     .coupon-description,
     .coupon-max-uses,
@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     transition: color 0.3s ease, transform 0.2s ease;
 
     &:hover {
