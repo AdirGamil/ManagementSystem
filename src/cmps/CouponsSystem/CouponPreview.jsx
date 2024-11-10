@@ -44,7 +44,11 @@ export function CouponPreview({ coupon, isAdmin }) {
             </p>
           </div>
 
-          <button className="edit-button" onClick={() => setIsEditOpen(true)}>
+          <button
+            title="Edit Coupon"
+            className="edit-button"
+            onClick={() => setIsEditOpen(true)}
+          >
             <FaEdit />
           </button>
 

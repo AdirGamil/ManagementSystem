@@ -40,14 +40,43 @@
     }
   }
 
+
+  
   .admin-info {
-    margin-top: rem(12px);
+    margin-top: rem(16px);
+    padding: rem(12px);
+    background-color: $clr-background;
+    border-radius: rem(8px);
+    border: rem(1px) solid $clr-hover;
 
     .coupon-description,
     .coupon-max-uses,
     .coupon-expiry,
     .coupon-stackable {
-      margin-bottom: rem(4px);
+      font-size: rem(14px);
+      color: $clr-text;
+    }
+  }
+
+  .edit-button {
+    position: absolute;
+    top: rem(8px);
+    right: rem(8px);
+    color: $clr-primary;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: rem(22px);
+    height: rem(22px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      color: $clr-hover-primary;
+      transform: scale(1.2);
     }
   }
 }
