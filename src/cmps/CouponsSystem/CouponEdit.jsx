@@ -30,7 +30,6 @@ export function CouponEdit({ initialData, onClose }) {
         <button className="close-button" onClick={handleClose}>
           <FaTimes />
         </button>
-        <h2>Edit Coupon</h2>
         <form>
           <label>
             Code:
