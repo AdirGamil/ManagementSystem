@@ -26,6 +26,7 @@ export function CouponPreview({ coupon, isAdmin }) {
       <p className="coupon-code">Code: {coupon.code}</p>
       <button
         className="copy-button"
+        title="Copy Coupon Code"
         onClick={() => copyCouponCode(coupon.code)}
       >
         Copy Code
