@@ -27,7 +27,7 @@ export function Coupons() {
     async function fetchCoupons() {
       try {
         const res = await axios.get('/data/coupons.json')
-        const data = Array.isArray(res.data) ? res.data : []
+        const data = res ? res.data : []
         setCoupons(data)
       } catch (error) {
         console.error('Error fetching coupons:', error)
