@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { toast } from 'react-hot-toast'
+import { UserEdit } from './UserEdit'
 import { FaEdit, FaTrash } from 'react-icons/fa'
+
 
 export function UserPreview({
   id,
@@ -10,10 +12,29 @@ export function UserPreview({
   registrationDate,
   lastLoginDate,
 }) {
-  function handleEdit() {
-    toast.success('User edited successfully!')
+  const [isEditOpen, setIsEditOpen] = useState(false)
+  const initialData = {
+    id,
+    username,
+    role,
+    password,
+    registrationDate,
+    lastLoginDate,
   }
 
+  // Opens the edit user dialog
+
+  function handleEdit() {
+    setIsEditOpen(true)
+  }
+
+  // Closes the edit user dialog
+  
+  function handleCloseEdit() {
+    setIsEditOpen(false)
+  }
+
+  // Deletes the user
   function handleDelete() {
     toast.success('User deleted successfully!')
   }
@@ -40,6 +61,10 @@ export function UserPreview({
           <FaTrash /> Delete
         </button>
       </div>
+
+      {isEditOpen && (
+        <UserEdit initialData={initialData} onClose={handleCloseEdit} />
+      )}
     </div>
   )
 }

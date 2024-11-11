@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react'
 import { UserList } from '../cmps/UserSystem/UserList'
 import axios from 'axios'
 
+
 export function Users() {
   const [users, setUsers] = useState([])
 
+  // Fetch the users from the data file and set the state.
   useEffect(() => {
     async function fetchUsers() {
       try {
@@ -26,3 +28,4 @@ export function Users() {
     </div>
   )
 }
+
