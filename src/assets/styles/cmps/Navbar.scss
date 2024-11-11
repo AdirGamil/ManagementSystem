@@ -62,9 +62,12 @@
       display: flex;
       flex-direction: row;
       color: $clr-white;
-      
       position: static;
       gap: rem(20px);
+      
+      :hover {
+        font-weight: bold;
+      }
       
       .navbar-login {
         margin-top: 0;
