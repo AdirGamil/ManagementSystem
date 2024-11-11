@@ -17,8 +17,6 @@ const validCoupons = [
 export function CouponInput() {
   const [couponCode, setCouponCode] = useState('')
 
-
-
   function handleApplyCoupon() {
     if (!couponCode) {
       // If the user didn't enter a coupon code, show an error message
@@ -47,7 +45,6 @@ export function CouponInput() {
     }
   }
 
-
   return (
     <div className="coupon-input">
       <h4 className="coupon-title">Apply Coupon</h4>
@@ -63,7 +60,6 @@ export function CouponInput() {
           Apply
         </button>
       </div>
-      <Toaster />
     </div>
   )
 }

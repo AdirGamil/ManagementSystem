@@ -56,7 +56,6 @@ export function Login() {
           Login
         </button>
       </form>
-      <Toaster />
     </div>
   )
 }

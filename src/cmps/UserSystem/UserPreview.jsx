@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { toast } from 'react-hot-toast'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 
 export function UserPreview({
@@ -8,6 +10,14 @@ export function UserPreview({
   registrationDate,
   lastLoginDate,
 }) {
+  function handleEdit() {
+    toast.success('User edited successfully!')
+  }
+
+  function handleDelete() {
+    toast.success('User deleted successfully!')
+  }
+
   return (
     <div className="user-preview">
       <div className="user-info">
@@ -19,10 +29,14 @@ export function UserPreview({
         <p>Role: {role}</p>
       </div>
       <div className="button-group">
-        <button title='Edit User' className="edit-button">
+        <button onClick={handleEdit} title="Edit User" className="edit-button">
           <FaEdit /> Edit
         </button>
-        <button title='Delete User' className="delete-button">
+        <button
+          onClick={handleDelete}
+          title="Delete User"
+          className="delete-button"
+        >
           <FaTrash /> Delete
         </button>
       </div>
