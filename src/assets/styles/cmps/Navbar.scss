@@ -1,19 +1,20 @@
 // Mobile First
 .navbar {
-  background-color: $clr-background;
+  background-color: $clr-primary;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: rem(16px) rem(20px);
 
   &-logo {
-    color: $clr-primary;
+    color: $clr-white;
   }
 
   &-menu-icon {
     font-size: rem(24px);
+    color: $clr-white;
   }
-
+  
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -34,7 +35,6 @@
       font-weight: 500;
 
       &.active {
-        color: $clr-primary;
         font-weight: bold;
       }
     }
@@ -56,15 +56,24 @@
     &-menu-icon {
       display: none;
     }
-
+    
     .navbar-links {
+      background: none;
       display: flex;
       flex-direction: row;
+      color: $clr-white;
+      
       position: static;
       gap: rem(20px);
-
+      
       .navbar-login {
         margin-top: 0;
+        
+        a {
+          border: rem(1px) solid $clr-white;
+          color: $clr-white;
+          font-weight: bold;
+        }
       }
     }
   }
