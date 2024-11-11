@@ -23,7 +23,7 @@ export function AdminPanel() {
         </Link>
       </div>
 
-      <button onClick={handleLogout} className="logout-button" title='Logout'>
+      <button onClick={handleLogout} className="logout-button" title="Logout">
         Logout
       </button>
     </div>

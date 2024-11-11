@@ -1,7 +1,8 @@
 .home {
-    background-color: $clr-primary;
-  .section.overview {
-      display: flex;
+  background-color: $clr-primary;
+
+  .section-overview {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -53,7 +54,7 @@
   }
 
   @media (min-width: 768px) {
-    .section.overview {
+    .section-overview {
       max-width: rem(1000px);
       margin: 0 auto;
       padding: rem(60px) rem(30px);
@@ -89,7 +90,7 @@
   }
 
   @media (min-width: 1024px) {
-    .section.overview {
+    .section-overview {
       padding: rem(90px) rem(40px);
 
       .overview-content {
@@ -119,6 +120,127 @@
       .section-image {
         width: rem(60px);
         height: rem(60px);
+      }
+    }
+  }
+
+  // SECTION SYSTEM
+  .section-system {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(40px) rem(20px);
+    background-color: $clr-white;
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: rem(20px);
+
+      .section-image {
+        width: rem(280px);
+        height: auto;
+      }
+
+      .text-content {
+        h1 {
+          font-size: rem(24px);
+          margin-bottom: rem(30px);
+          font-weight: bold;
+          color: $clr-text;
+        }
+
+        p {
+          font-size: rem(16px);
+          margin-bottom: rem(15px);
+          color: $clr-grey;
+        }
+
+        .section-button {
+          padding: rem(8px) rem(16px);
+          color: $clr-white;
+          background-color: $clr-primary;
+          border-radius: rem(4px);
+          font-weight: bold;
+          transition: all 0.3s ease;
+
+          &:hover {
+            scale: 1.05;
+          }
+        }
+      }
+    }
+
+    // Custom style for the blue section
+    &.blue {
+      background-color: $clr-primary;
+      color: $clr-white;
+
+      .text-content {
+        h1,
+        p {
+          color: $clr-white;
+        }
+
+        .section-button {
+          background-color: $clr-white;
+          color: $clr-primary;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      padding: rem(60px) rem(30px);
+
+      .section-content {
+        flex-direction: row;
+        text-align: left;
+        max-width: rem(1200px);
+        gap: rem(40px);
+
+        .section-image {
+          width: rem(350px);
+        }
+
+        .text-content {
+          h1 {
+            font-size: rem(28px);
+          }
+
+          p {
+            font-size: rem(18px);
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1024px) {
+      padding: rem(80px) rem(40px);
+
+      .section-content {
+        gap: rem(60px);
+
+        .section-image {
+          width: rem(500px);
+        }
+
+        .text-content {
+          h1 {
+            font-size: rem(42px);
+          }
+
+          p {
+            font-size: rem(24px);
+          }
+
+          .section-button {
+            padding: rem(10px) rem(20px);
+            font-size: rem(22px);
+            border-radius: rem(6px);
+          }
+        }
       }
     }
   }
