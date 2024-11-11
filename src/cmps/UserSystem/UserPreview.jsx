@@ -1,3 +1,5 @@
+import { FaEdit, FaTrash } from 'react-icons/fa'
+
 export function UserPreview({
   id,
   username,
@@ -16,7 +18,14 @@ export function UserPreview({
         <p>Last Login Date: {lastLoginDate}</p>
         <p>Role: {role}</p>
       </div>
-      <button className="edit-button">Edit</button>
+      <div className="button-group">
+        <button title='Edit User' className="edit-button">
+          <FaEdit /> Edit
+        </button>
+        <button title='Delete User' className="delete-button">
+          <FaTrash /> Delete
+        </button>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,57 @@
+.user-preview {
+  display: flex;
+  flex-direction: column;
+  padding: rem(16px);
+  background-color: $clr-background;
+  border: rem(1px) solid $clr-grey;
+  border-radius: rem(8px);
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(4px);
+
+    p {
+      color: $clr-grey;
+
+      &:first-child {
+        font-weight: bold;
+        color: $clr-text;
+      }
+    }
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: rem(8px);
+    margin-top: rem(12px);
+
+    .edit-button,
+    .delete-button {
+      display: flex;
+      align-items: center;
+      gap: rem(4px);
+      padding: rem(6px) rem(12px);
+      border-radius: rem(4px);
+      color: $clr-white;
+      transition: background-color 0.3s ease;
+    }
+
+    .edit-button {
+      background-color: $clr-primary;
+
+      &:hover {
+        background-color: $clr-hover-primary;
+      }
+    }
+
+    .delete-button {
+      background-color: $clr-red-btn;
+
+      &:hover {
+        background-color: darken($clr-red-btn, 10%);
+      }
+    }
+  }
+}
