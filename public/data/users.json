@@ -1,52 +1,82 @@
 [
   {
     "id": 1,
-    "username": "admin",
-    "role": "Admin"
+    "username": "lionheart",
+    "password": "admin123",
+    "role": "Admin",
+    "registrationDate": "01/01/2023",
+    "lastLoginDate": "10/11/2024"
   },
   {
     "id": 2,
-    "username": "editor_1",
-    "role": "Editor"
+    "username": "skywalker",
+    "password": "editorpass1",
+    "role": "Editor",
+    "registrationDate": "15/03/2023",
+    "lastLoginDate": "05/11/2024"
   },
   {
     "id": 3,
-    "username": "editor_2",
-    "role": "Editor"
+    "username": "riverstone",
+    "password": "editorpass2",
+    "role": "Editor",
+    "registrationDate": "12/04/2023",
+    "lastLoginDate": "09/11/2024"
   },
   {
     "id": 4,
-    "username": "viewer_1",
-    "role": "User"
+    "username": "sunshine",
+    "password": "viewerpass1",
+    "role": "User",
+    "registrationDate": "20/05/2023",
+    "lastLoginDate": "07/11/2024"
   },
   {
     "id": 5,
-    "username": "viewer_2",
-    "role": "User"
+    "username": "bluejay",
+    "password": "viewerpass2",
+    "role": "User",
+    "registrationDate": "05/06/2023",
+    "lastLoginDate": "08/11/2024"
   },
   {
     "id": 6,
-    "username": "manager_1",
-    "role": "Admin"
+    "username": "eagleeye",
+    "password": "managerpass1",
+    "role": "Admin",
+    "registrationDate": "25/07/2023",
+    "lastLoginDate": "06/11/2024"
   },
   {
     "id": 7,
-    "username": "manager_2",
-    "role": "Admin"
+    "username": "stormbringer",
+    "password": "managerpass2",
+    "role": "Admin",
+    "registrationDate": "15/08/2023",
+    "lastLoginDate": "04/11/2024"
   },
   {
     "id": 8,
-    "username": "content_creator_1",
-    "role": "Editor"
+    "username": "forestfire",
+    "password": "creatorpass1",
+    "role": "Editor",
+    "registrationDate": "01/09/2023",
+    "lastLoginDate": "03/11/2024"
   },
   {
     "id": 9,
-    "username": "content_creator_2",
-    "role": "Editor"
+    "username": "moondust",
+    "password": "creatorpass2",
+    "role": "Editor",
+    "registrationDate": "20/10/2023",
+    "lastLoginDate": "02/11/2024"
   },
   {
     "id": 10,
-    "username": "viewer_3",
-    "role": "User"
+    "username": "sandstorm",
+    "password": "viewerpass3",
+    "role": "User",
+    "registrationDate": "30/11/2023",
+    "lastLoginDate": "01/11/2024"
   }
 ]
