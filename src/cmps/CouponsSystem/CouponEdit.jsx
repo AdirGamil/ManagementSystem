@@ -25,7 +25,11 @@ export function CouponEdit({ initialData, onClose }) {
   }
 
   return (
-    <dialog ref={dialogRef} className="coupon-edit-dialog">
+    <dialog
+      ref={dialogRef}
+      className="coupon-edit-dialog"
+      onCancel={handleClose}
+    >
       <div className="coupon-edit-content">
         <button className="close-button" onClick={handleClose}>
           <FaTimes />

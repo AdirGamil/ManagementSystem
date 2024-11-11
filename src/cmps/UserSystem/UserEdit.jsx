@@ -33,7 +33,7 @@ export function UserEdit({ initialData = {}, onClose }) {
   }
 
   return (
-    <dialog ref={dialogRef} className="user-edit-dialog">
+    <dialog ref={dialogRef} className="user-edit-dialog" onCancel={handleClose}>
       <div className="user-edit-content">
         <button className="close-button" onClick={handleClose}>
           <FaTimes />
@@ -50,7 +50,7 @@ export function UserEdit({ initialData = {}, onClose }) {
             />
           </label>
 
-{/* Password input with toggle button */}
+          {/* Password input with toggle button */}
           <label>
             Password:
             <div className="password-container">
