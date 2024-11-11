@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react'
-import { FaTimes } from 'react-icons/fa'
+import { useEffect, useRef, useState } from 'react'
+import { FaTimes, FaEye, FaEyeSlash } from 'react-icons/fa'
 import { toast } from 'react-hot-toast'
-
 
 export function UserEdit({ initialData = {}, onClose }) {
   const dialogRef = useRef(null)
   const isEdit = !!initialData.username
+  const [showPassword, setShowPassword] = useState(false)
 
   // Show the dialog when the component is mounted.
   useEffect(() => {
@@ -28,6 +28,10 @@ export function UserEdit({ initialData = {}, onClose }) {
     handleClose()
   }
 
+  function togglePasswordVisibility() {
+    setShowPassword((prev) => !prev)
+  }
+
   return (
     <dialog ref={dialogRef} className="user-edit-dialog">
       <div className="user-edit-content">
@@ -46,13 +50,24 @@ export function UserEdit({ initialData = {}, onClose }) {
             />
           </label>
 
+{/* Password input with toggle button */}
           <label>
             Password:
-            <input
-              type="password"
-              name="password"
-              defaultValue={initialData.password || ''}
-            />
+            <div className="password-container">
+              <input
+                type={showPassword ? 'text' : 'password'}
+                name="password"
+                defaultValue={initialData.password || ''}
+                className="password-input"
+              />
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="toggle-password-button"
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
+            </div>
           </label>
 
           <label>

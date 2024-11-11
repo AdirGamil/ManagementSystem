@@ -1,0 +1,72 @@
+.user-edit-dialog {
+    width: rem(400px);
+    padding: rem(20px);
+    border-radius: rem(8px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+  
+    .user-edit-content {
+      position: relative;
+    }
+  
+    .close-button {
+      position: absolute;
+      right: rem(10px);
+    }
+  
+    .actions {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .save-button {
+      background-color: $clr-green-btn;
+      color: $clr-white;
+      padding: rem(10px) rem(20px);
+      border-radius: rem(4px);
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken($clr-green-btn, 10%);
+      }
+    }
+  
+    label {
+      display: block;
+      margin-bottom: rem(10px);
+      font-weight: bold;
+    }
+  
+    input[type='text'],
+    input[type='password'],
+    input[type='date'],
+    select {
+      width: 100%;
+      padding: rem(8px);
+      margin-top: rem(5px);
+      margin-bottom: rem(15px);
+      border: rem(1px) solid $clr-grey;
+      border-radius: rem(4px);
+    }
+
+    .password-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    
+    
+        .toggle-password-button {
+          position: absolute;
+          right: rem(10px);
+          color: $clr-grey;
+    
+          &:hover {
+            color: $clr-text;
+          }
+        }
+      }
+  }
+  
