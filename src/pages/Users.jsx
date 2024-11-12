@@ -1,25 +1,18 @@
 import { useState, useEffect } from 'react'
 import { UserList } from '../cmps/UserSystem/UserList'
-import axios from 'axios'
-
+import { fetchUsers } from '../services/user.service'
 
 export function Users() {
   const [users, setUsers] = useState([])
 
-  // Fetch the users from the data file and set the state.
-  useEffect(() => {
-    async function fetchUsers() {
-      try {
-        const res = await axios.get('/data/users.json')
-        const data = res ? res.data : []
-        setUsers(data)
-      } catch (error) {
-        console.error('Error fetching users:', error)
-        setUsers([])
-      }
-    }
+  // Load users data from the service
+  async function loadUsers() {
+    const data = await fetchUsers()
+    setUsers(data)
+  }
 
-    fetchUsers()
+  useEffect(() => {
+    loadUsers()
   }, [])
 
   return (
@@ -28,4 +21,3 @@ export function Users() {
     </div>
   )
 }
-

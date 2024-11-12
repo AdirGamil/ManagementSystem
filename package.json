@@ -5,10 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:remote": "npm run dev",
-    "dev:remote:mac": "npm run dev",
-    "dev:local": "set VITE_LOCAL=true&&vite",
-    "dev:local:mac": "export VITE_LOCAL=true && vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

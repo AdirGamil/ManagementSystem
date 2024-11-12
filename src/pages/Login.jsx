@@ -1,35 +1,30 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
-import { Toaster, toast } from 'react-hot-toast'
+import { toast } from 'react-hot-toast'
 
 export function Login() {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [credentials, setCredentials] = useState({ username: '', password: '' })
   const navigate = useNavigate()
 
-  function handleSubmit(e) {
-    e.preventDefault()
-
-    if (!username || !password) {
-      toast.error('Please fill in all fields')
-      return
-    }
-
+  function handleSubmit({ username, password }) {
     if (username === 'admin' && password === 'admin') {
       toast.success('Welcome!')
-      console.log('Login success')
-
       navigate('/admin')
     } else {
       toast.error('Wrong username or password')
-      console.log('Login failed')
     }
   }
 
   return (
     <div className="login">
       <h2 className="login-title">Login</h2>
-      <form className="login-form" onSubmit={handleSubmit}>
+      <form
+        className="login-form"
+        onSubmit={(e) => {
+          e.preventDefault()
+          handleSubmit(credentials)
+        }}
+      >
         <label className="login-label" htmlFor="username">
           Username:
         </label>
@@ -38,8 +33,10 @@ export function Login() {
           id="username"
           placeholder="admin"
           className="login-input"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={credentials.username}
+          onChange={({ target }) =>
+            setCredentials({ ...credentials, username: target.value })
+          }
         />
         <label className="login-label" htmlFor="password">
           Password:
@@ -49,8 +46,10 @@ export function Login() {
           id="password"
           placeholder="admin"
           className="login-input"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={credentials.password}
+          onChange={({ target }) =>
+            setCredentials({ ...credentials, password: target.value })
+          }
         />
         <button className="login-button" type="submit">
           Login

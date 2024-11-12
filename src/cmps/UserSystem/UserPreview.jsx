@@ -22,17 +22,10 @@ export function UserPreview({
     lastLoginDate,
   }
 
-  // Opens the edit user dialog
-
-  function handleEdit() {
-    setIsEditOpen(true)
+  function toggleEdit() {
+    setIsEditOpen((prev) => !prev)
   }
 
-  // Closes the edit user dialog
-  
-  function handleCloseEdit() {
-    setIsEditOpen(false)
-  }
 
   // Deletes the user
   function handleDelete() {
@@ -50,7 +43,7 @@ export function UserPreview({
         <p>Role: {role}</p>
       </div>
       <div className="button-group">
-        <button onClick={handleEdit} title="Edit User" className="edit-button">
+        <button onClick={toggleEdit} title="Edit User" className="edit-button">
           <FaEdit /> Edit
         </button>
         <button
@@ -63,7 +56,7 @@ export function UserPreview({
       </div>
 
       {isEditOpen && (
-        <UserEdit initialData={initialData} onClose={handleCloseEdit} />
+        <UserEdit initialData={initialData} onClose={toggleEdit} />
       )}
     </div>
   )

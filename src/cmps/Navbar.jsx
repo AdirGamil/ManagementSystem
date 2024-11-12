@@ -8,12 +8,12 @@ export function Navbar() {
   const getActiveClass = ({ isActive }) => (isActive ? 'active' : '')
   const toggleMenu = () => setIsOpen(!isOpen)
 
-  const closeMenu = () => setIsOpen(false)
-
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/"><h1>Logo</h1></a>
+        <a href="/">
+          <h1>Logo</h1>
+        </a>
       </div>
 
       <div className="navbar-menu-icon" onClick={toggleMenu}>
@@ -22,32 +22,40 @@ export function Navbar() {
 
       <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
         <li>
-          <NavLink to="" className={getActiveClass} onClick={closeMenu}>
+          <NavLink to="" className={getActiveClass} onClick={toggleMenu}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/admin" className={getActiveClass} onClick={closeMenu}>
+          <NavLink to="/admin" className={getActiveClass} onClick={toggleMenu}>
             Admin Panel
           </NavLink>
         </li>
         <li>
-          <NavLink to="/coupons" className={getActiveClass} onClick={closeMenu}>
+          <NavLink
+            to="/coupons"
+            className={getActiveClass}
+            onClick={toggleMenu}
+          >
             Coupons
           </NavLink>
         </li>
         <li>
-          <NavLink to="/users" className={getActiveClass} onClick={closeMenu}>
+          <NavLink to="/users" className={getActiveClass} onClick={toggleMenu}>
             Users
           </NavLink>
         </li>
         <li>
-          <NavLink to="/reports" className={getActiveClass} onClick={closeMenu}>
+          <NavLink
+            to="/reports"
+            className={getActiveClass}
+            onClick={toggleMenu}
+          >
             Reports
           </NavLink>
         </li>
         <li className="navbar-login">
-          <NavLink to="/login" className={getActiveClass} onClick={closeMenu}>
+          <NavLink to="/login" className={getActiveClass} onClick={toggleMenu}>
             Login
           </NavLink>
         </li>

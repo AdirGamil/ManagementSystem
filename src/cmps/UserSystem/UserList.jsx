@@ -5,20 +5,14 @@ import { UserEdit } from './UserEdit'
 export function UserList({ users }) {
   const [isAddOpen, setIsAddOpen] = useState(false)
 
-  // Opens the add user dialog.
-  function handleAddUser() {
-    setIsAddOpen(true)
-  }
-
-  // Closes the add user dialog.
-  function handleCloseAddUser() {
-    setIsAddOpen(false)
+  function toggleAddUser() {
+    setIsAddOpen((prev) => !prev)
   }
 
   return (
     <div className="user-list">
       <h2>User Management</h2>
-      <button onClick={handleAddUser} className="add-user-button">
+      <button onClick={toggleAddUser} className="add-user-button">
         Add User
       </button>
 
@@ -38,7 +32,7 @@ export function UserList({ users }) {
       </div>
 
       {/* Add user dialog */}
-      {isAddOpen && <UserEdit initialData={{}} onClose={handleCloseAddUser} />}
+      {isAddOpen && <UserEdit initialData={{}} onClose={toggleAddUser} />}
     </div>
   )
 }

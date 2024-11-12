@@ -39,7 +39,6 @@ export function UserEdit({ initialData = {}, onClose }) {
           <FaTimes />
         </button>
 
-        {/* The form for adding or editing the user. */}
         <form>
           <label>
             Username:
@@ -50,7 +49,6 @@ export function UserEdit({ initialData = {}, onClose }) {
             />
           </label>
 
-          {/* Password input with toggle button */}
           <label>
             Password:
             <div className="password-container">
