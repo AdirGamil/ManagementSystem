@@ -18,7 +18,7 @@ export function Reports() {
 
   return (
     <div className="reports-page">
-      <h1>Reports</h1>
+      <h1 className='reports-page-title'>Reports System</h1>
       <ReportFilter />
       <ReportList reports={reports} />
     </div>

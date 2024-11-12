@@ -1,0 +1,63 @@
+.report-list {
+  .report-cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(12px);
+  }
+
+  .report-card {
+    padding: rem(16px);
+    background-color: $clr-background;
+    border: rem(1px) solid $clr-grey;
+    border-radius: rem(5px);
+
+    .report-item {
+      color: $clr-text;
+      text-align: center;
+      padding: rem(8px);
+      background-color: $clr-white;
+      border-left: rem(4px) solid $clr-primary;
+      margin-bottom: rem(4px);
+    }
+  }
+
+  .report-table {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .report-cards {
+      display: none;
+    }
+    .report-table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+
+      th {
+        background-color: $clr-primary;
+        color: $clr-white;
+        padding: rem(10px);
+        border: rem(1px) solid $clr-grey;
+        text-align: center;
+      }
+
+      td {
+        background-color: $clr-background;
+        padding: rem(10px);
+        border: rem(1px) solid $clr-grey;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+
+      tr {
+        &:nth-child(odd) td {
+          background-color: $clr-white;
+        }
+        &:hover td {
+          background-color: lighten($clr-primary, 40%);
+        }
+      }
+    }
+  }
+}

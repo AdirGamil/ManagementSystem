@@ -3,6 +3,7 @@
   background-color: $clr-primary;
   display: flex;
   position: sticky;
+  z-index: 100;
   top: 0;
   justify-content: space-between;
   align-items: center;
