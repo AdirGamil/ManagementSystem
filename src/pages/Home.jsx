@@ -30,7 +30,8 @@ export function Home() {
             reports. Designed for efficiency and ease of use, it's perfect for
             admins seeking control and insights.
           </p>
-          <a href="#system-sections" className="start-button">
+
+          <a href="#system-sections" className="get-started-link">
             Get Started
           </a>
         </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { fetchReports } from '../services/report.service'
 import { ReportList } from '../cmps/ReportsSystem/ReportList'
 import { ReportFilter } from '../cmps/ReportsSystem/ReportFilter'
+import { ExcelButton } from '../cmps/ReportsSystem/ExcelButton'
 
 export function Reports() {
   const [reports, setReports] = useState([])
@@ -18,9 +19,10 @@ export function Reports() {
 
   return (
     <div className="reports-page">
-      <h1 className='reports-page-title'>Reports System</h1>
+      <h1 className="reports-page-title">Reports System</h1>
       <ReportFilter />
       <ReportList reports={reports} />
+      <ExcelButton />
     </div>
   )
 }
