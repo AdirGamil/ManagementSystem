@@ -131,6 +131,8 @@
     justify-content: center;
     padding: rem(40px) rem(20px);
     background-color: $clr-white;
+    min-height: 80vh;
+
 
     .section-content {
       display: flex;
