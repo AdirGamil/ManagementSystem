@@ -5,9 +5,16 @@ import couponImage from '../assets/img/coupon-system.png'
 import userImage from '../assets/img/user-system.png'
 import { ReactTyped } from 'react-typed'
 
+/**
+ * The Home component is the main page of the application. It is a container
+ * that displays an overview of the management system, as well as four sections
+ * that highlight the four main features of the system: the Admin Panel, the
+ * Coupon Management System, the Reports and Analytics System, and the User
+ * Support System.
+ */
 export function Home() {
   return (
-    <div className="home">
+    <div className="home-container">
       {/* Section 1: Overview */}
       <section className="section-overview">
         <div className="overview-content">
@@ -56,7 +63,7 @@ export function Home() {
       </section>
 
       {/* Section 3: Coupon Management System */}
-      <section id="learn-more" className="section-system blue">
+      <section className="section-system blue">
         <div className="section-content">
           <div className="text-content">
             <h1>Coupon Management System</h1>
@@ -79,7 +86,7 @@ export function Home() {
       </section>
 
       {/* Section 4: Reports and Analytics System */}
-      <section id="learn-more" className="section-system">
+      <section className="section-system">
         <div className="section-content">
           <img
             src={reportImage}
@@ -100,7 +107,7 @@ export function Home() {
       </section>
 
       {/* Section 5: User Support System */}
-      <section id="learn-more" className="section-system blue">
+      <section className="section-system blue">
         <div className="section-content">
           <div className="text-content">
             <h1>User Support System</h1>

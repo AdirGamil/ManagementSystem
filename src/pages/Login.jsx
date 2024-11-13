@@ -2,6 +2,10 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import { toast } from 'react-hot-toast'
 
+/**
+ * Login component handles user login process
+ * and navigating to the admin page if the login is successful.
+ */
 export function Login() {
   const [credentials, setCredentials] = useState({ username: '', password: '' })
   const navigate = useNavigate()
