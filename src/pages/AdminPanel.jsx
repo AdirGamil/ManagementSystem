@@ -11,7 +11,7 @@ export function AdminPanel() {
 
   return (
     <div className="admin-panel">
-      <h2>Welcome, Admin</h2>
+      <h1>Welcome, Admin</h1>
       <p>Manage the coupon and user systems from here.</p>
 
       <div className="admin-actions">

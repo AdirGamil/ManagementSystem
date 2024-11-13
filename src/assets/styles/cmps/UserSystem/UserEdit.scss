@@ -1,72 +1,107 @@
 .user-edit-dialog {
-    width: rem(400px);
-    padding: rem(20px);
-    border-radius: rem(8px);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
-  
-    .user-edit-content {
-      position: relative;
+  width: rem(400px);
+  padding: rem(20px);
+  border-radius: rem(8px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+
+  .user-edit-content {
+    position: relative;
+  }
+
+  .close-button {
+    position: absolute;
+    right: rem(10px);
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .save-button {
+    background-color: $clr-green-btn;
+    color: $clr-white;
+    padding: rem(10px) rem(20px);
+    border-radius: rem(4px);
+    font-size: rem($common-font-size-button);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($clr-green-btn, 10%);
     }
-  
-    .close-button {
+  }
+
+  label {
+    display: block;
+    margin-bottom: rem(10px);
+    font-weight: bold;
+    font-size: rem($common-font-size-label);
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='date'],
+  select {
+    width: 100%;
+    padding: rem(8px);
+    margin-top: rem(5px);
+    margin-bottom: rem(15px);
+    border: rem(1px) solid $clr-grey;
+    border-radius: rem(4px);
+    font-size: rem($common-font-size-input);
+  }
+
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .toggle-password-button {
       position: absolute;
       right: rem(10px);
-    }
-  
-    .actions {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .save-button {
-      background-color: $clr-green-btn;
-      color: $clr-white;
-      padding: rem(10px) rem(20px);
-      border-radius: rem(4px);
-      transition: background-color 0.3s ease;
-  
+      color: $clr-grey;
+
       &:hover {
-        background-color: darken($clr-green-btn, 10%);
+        color: $clr-text;
       }
     }
-  
+  }
+
+  @media (min-width: 768px) {
     label {
-      display: block;
-      margin-bottom: rem(10px);
-      font-weight: bold;
+      font-size: rem($common-font-size-label-tablet);
     }
-  
+
+    .save-button {
+            font-size: rem($common-font-size-button-tablet);
+    }
+
     input[type='text'],
     input[type='password'],
     input[type='date'],
     select {
-      width: 100%;
-      padding: rem(8px);
-      margin-top: rem(5px);
-      margin-bottom: rem(15px);
-      border: rem(1px) solid $clr-grey;
-      border-radius: rem(4px);
+      font-size: rem($common-font-size-input-tablet);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    label {
+      font-size: rem($common-font-size-label-desktop);
     }
 
-    .password-container {
-        position: relative;
-        display: flex;
-        align-items: center;
-    
-    
-        .toggle-password-button {
-          position: absolute;
-          right: rem(10px);
-          color: $clr-grey;
-    
-          &:hover {
-            color: $clr-text;
-          }
-        }
-      }
+    .save-button {
+      font-size: rem($common-font-size-button-desktop);
+    }
+
+    input[type='text'],
+    input[type='password'],
+    input[type='date'],
+    select {
+      font-size: rem($common-font-size-input-desktop);
+    }
   }
-  
+}

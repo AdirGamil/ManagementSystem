@@ -12,6 +12,7 @@
 
     p {
       color: $clr-grey;
+      font-size: rem($common-font-size-item);
 
       &:first-child {
         font-weight: bold;
@@ -34,6 +35,7 @@
       padding: rem(6px) rem(12px);
       border-radius: rem(4px);
       color: $clr-white;
+      font-size: rem($common-font-size-button);
       transition: background-color 0.3s ease, transform 0.2s ease;
 
       &:hover {
@@ -55,6 +57,28 @@
       &:hover {
         background-color: darken($clr-red-btn, 10%);
       }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .user-info p {
+      font-size: rem($common-font-size-item-tablet);
+    }
+
+    .button-group .edit-button,
+    .button-group .delete-button {
+      font-size: rem($common-font-size-button-tablet);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .user-info p {
+      font-size: rem($common-font-size-item-desktop);
+    }
+
+    .button-group .edit-button,
+    .button-group .delete-button {
+      font-size: rem($common-font-size-button-desktop);
     }
   }
 }

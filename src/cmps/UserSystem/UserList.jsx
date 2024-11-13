@@ -11,7 +11,7 @@ export function UserList({ users }) {
 
   return (
     <div className="user-list">
-      <h2>User Management</h2>
+      <h1>User Management</h1>
       <button onClick={toggleAddUser} className="add-user-button">
         Add User
       </button>

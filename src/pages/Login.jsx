@@ -6,6 +6,7 @@ export function Login() {
   const [credentials, setCredentials] = useState({ username: '', password: '' })
   const navigate = useNavigate()
 
+  //! Can be secure by .env file and adding to .gitignore
   function handleSubmit({ username, password }) {
     if (username === 'admin' && password === 'admin') {
       toast.success('Welcome!')

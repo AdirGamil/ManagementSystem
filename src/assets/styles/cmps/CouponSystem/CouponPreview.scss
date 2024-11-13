@@ -12,7 +12,7 @@
   }
 
   .coupon-title {
-    font-size: rem(18px);
+    font-size: rem($common-font-size-h2);
     color: $clr-primary;
     font-weight: bold;
     margin-bottom: rem(8px);
@@ -24,16 +24,16 @@
     padding: rem(8px);
     border-radius: rem(4px);
     margin-bottom: rem(12px);
+    font-size: rem($common-font-size-small);
   }
 
   .copy-button {
     padding: rem(8px) rem(16px);
-
     border-radius: rem(4px);
     background-color: $clr-primary;
     color: $clr-white;
     font-weight: bold;
-
+    font-size: rem($common-font-size-button);
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -48,11 +48,8 @@
     border-radius: rem(8px);
     border: rem(1px) solid $clr-grey;
 
-    .coupon-description,
-    .coupon-max-uses,
-    .coupon-expiry,
-    .coupon-stackable {
-      font-size: rem(14px);
+    .admin-info-item {
+      font-size: rem($common-font-size-small);
       color: $clr-text;
     }
   }
@@ -62,14 +59,13 @@
     top: rem(8px);
     right: rem(8px);
     color: $clr-primary;
-
     border-radius: 50%;
     width: rem(22px);
     height: rem(22px);
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: rem($common-font-size-small);
     transition: color 0.3s ease, transform 0.2s ease;
 
     &:hover {

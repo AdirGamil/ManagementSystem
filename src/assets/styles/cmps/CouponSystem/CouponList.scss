@@ -1,18 +1,16 @@
 .coupon-list {
-    margin: 0 auto;
-    padding: rem(20px);
-    text-align: center;
-  
-    h3 {
-      font-size: rem(24px);
-      margin-bottom: rem(20px);
-    
-    }
-  
-    ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: rem(16px);
-    }
+  margin: 0 auto;
+  padding: rem(20px);
+  text-align: center;
+
+  h1 {
+    font-size: rem($common-font-size-h1); 
+    margin-bottom: rem(20px);
   }
-  
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: rem(16px);
+  }
+}

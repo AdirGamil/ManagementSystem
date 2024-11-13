@@ -18,6 +18,7 @@
       background-color: $clr-white;
       border-left: rem(4px) solid $clr-primary;
       margin-bottom: rem(4px);
+      font-size: rem($common-font-size-item);
     }
   }
 
@@ -40,6 +41,7 @@
         padding: rem(10px);
         border: rem(1px) solid $clr-grey;
         text-align: center;
+        font-size: rem($common-font-size-item-tablet);
       }
 
       td {
@@ -48,6 +50,7 @@
         border: rem(1px) solid $clr-grey;
         text-align: center;
         transition: background-color 0.3s ease;
+        font-size: rem($common-font-size-item-tablet);
       }
 
       tr {
@@ -58,6 +61,13 @@
           background-color: lighten($clr-primary, 40%);
         }
       }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .report-table th,
+    .report-table td {
+      font-size: rem($common-font-size-item-desktop);
     }
   }
 }

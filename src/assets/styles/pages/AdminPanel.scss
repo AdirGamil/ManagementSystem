@@ -6,8 +6,8 @@
   border-radius: rem(8px);
   text-align: center;
 
-  h2 {
-    font-size: rem(24px);
+  h1 {
+    font-size: rem($common-font-size-h1);
     color: $clr-text;
     margin-bottom: rem(16px);
   }

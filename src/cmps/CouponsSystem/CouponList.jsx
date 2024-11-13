@@ -3,7 +3,7 @@ import { CouponPreview } from './CouponPreview'
 export function CouponList({ coupons, isAdmin }) {
   return (
     <div className="coupon-list">
-      <h3>Available Coupons</h3>
+      <h1>Available Coupons</h1>
       {coupons.length > 0 ? (
         <ul>
           {coupons.map((coupon) => (

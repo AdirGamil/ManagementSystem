@@ -7,7 +7,7 @@ import { CouponInput } from './CouponInput'
 export function OrderSummary() {
   // Initial product cost before any discount
   const initialAmount = 100
-  
+
   // List of demo coupons with code and discount
   const demoCoupons = [
     { code: 'DISCOUNT10', description: '10% off', discount: '10%' },
@@ -16,15 +16,14 @@ export function OrderSummary() {
 
   return (
     <div className="order-summary">
-      <h3>Order Summary</h3>
-      
+      <h2>Order Summary</h2>
+
       {/* Display the initial product cost */}
       <div className="summary-item">
         <p>Product Cost:</p>
         <span>{initialAmount} ₪</span>
       </div>
 
-      {/* CouponInput component to input a coupon code */}
       <CouponInput />
 
       {/* Display the code of the first demo coupon */}
@@ -33,7 +32,6 @@ export function OrderSummary() {
         <span>{demoCoupons[0].code}</span>
       </div>
 
-      {/* Calculate and display the subtotal after applying a 10% discount */}
       <div className="summary-item">
         <p>Subtotal:</p>
         <span>{initialAmount - initialAmount * 0.1} ₪</span>

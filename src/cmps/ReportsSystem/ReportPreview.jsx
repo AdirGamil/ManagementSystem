@@ -12,12 +12,24 @@ export function ReportPreview({ report, isTable }) {
     </tr>
   ) : (
     <div className="report-card">
-      <p className="report-item">Report ID: {id}</p>
-      <p className="report-item">User ID: {userId}</p>
-      <p className="report-item">Username: {username}</p>
-      <p className="report-item">Coupon ID: {couponId}</p>
-      <p className="report-item">Coupon Code: {couponCode}</p>
-      <p className="report-item">Date Used: {dateUsed}</p>
+      <p className="report-item">
+        <strong>Report ID:</strong> {id}
+      </p>
+      <p className="report-item">
+        <strong>User ID:</strong> {userId}
+      </p>
+      <p className="report-item">
+        <strong>Username:</strong> {username}
+      </p>
+      <p className="report-item">
+        <strong>Coupon ID:</strong> {couponId}
+      </p>
+      <p className="report-item">
+        <strong>Coupon Code:</strong> {couponCode}
+      </p>
+      <p className="report-item">
+        <strong>Date Used:</strong> {dateUsed}
+      </p>
     </div>
   )
 }

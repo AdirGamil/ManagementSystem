@@ -1,31 +1,52 @@
 .user-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    h2 {
-      font-size: rem(24px);
-      color: $clr-text;
-      margin: rem(20px);
-    }
-  
-    .add-user-button {
-      padding: rem(8px) rem(16px);
-      background-color: $clr-green-btn;
-      color: $clr-white;
-      border-radius: rem(4px);
-      margin-bottom: rem(20px);
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: darken($clr-green-btn, 10%);
-      }
-    }
-  
-    .users {
-      display: grid;
-      gap: rem(16px);
-      width: 90%;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: rem($common-font-size-h1);
+    color: $clr-text;
+    margin: rem(20px);
+  }
+
+  .add-user-button {
+    padding: rem(8px) rem(16px);
+    background-color: $clr-green-btn;
+    color: $clr-white;
+    border-radius: rem(4px);
+    margin-bottom: rem(20px);
+    font-size: rem($common-font-size-button);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($clr-green-btn, 10%);
     }
   }
+
+  .users {
+    display: grid;
+    gap: rem(16px);
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: rem($common-font-size-h1-tablet);
+    }
+
+    .add-user-button {
+      font-size: rem($common-font-size-button-tablet);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: rem($common-font-size-h1-desktop);
+    }
+
+    .add-user-button {
+      font-size: rem($common-font-size-button-desktop);
+    }
+  }
+}

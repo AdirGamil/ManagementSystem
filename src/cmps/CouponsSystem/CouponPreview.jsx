@@ -18,11 +18,11 @@ export function CouponPreview({ coupon, isAdmin }) {
 
   return (
     <div className="coupon-preview">
-      <h4 className="coupon-title">
+      <h2 className="coupon-title">
         {coupon.discountType === 'percentage'
           ? `${coupon.discountValue}% off`
           : `$${coupon.discountValue} off`}
-      </h4>
+      </h2>
       <p className="coupon-code">Code: {coupon.code}</p>
       <button
         className="copy-button"
@@ -35,12 +35,10 @@ export function CouponPreview({ coupon, isAdmin }) {
       {isAdmin && (
         <>
           <div className="admin-info">
-            <p className="coupon-description">
-              Description: {coupon.description}
-            </p>
-            <p className="coupon-max-uses">Max Uses: {coupon.maxUses}</p>
-            <p className="coupon-expiry">Expiry Date: {coupon.expiryDate}</p>
-            <p className="coupon-stackable">
+            <p className="admin-info-item">Description: {coupon.description}</p>
+            <p className="admin-info-item">Max Uses: {coupon.maxUses}</p>
+            <p className="admin-info-item">Expiry Date: {coupon.expiryDate}</p>
+            <p className="admin-info-item">
               Stackable: {coupon.stackable ? 'Yes' : 'No'}
             </p>
           </div>
