@@ -1,0 +1,16 @@
+.footer {
+    margin-top: rem(20px);
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(50px);
+    background-color: $clr-primary;
+    color: $clr-white;
+
+    .footer-text {
+      font-weight: bold;
+      font-size: rem(16px);
+    }
+  }
+}
