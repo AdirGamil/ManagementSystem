@@ -19,8 +19,11 @@ export function ReportFilter() {
         />
       </div>
       <div className="filter-section">
-        <label htmlFor="dateRange">Date Range:</label>
+        <label htmlFor="startDate">Start Date:</label>
         <input type="date" id="startDate" placeholder="Start date" />
+      </div>
+      <div className="filter-section">
+        <label htmlFor="endDate">End Date:</label>
         <input type="date" id="endDate" placeholder="End date" />
       </div>
       <button type="submit" className="apply-filter">

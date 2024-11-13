@@ -1,9 +1,9 @@
 export function ReportPreview({ report, isTable }) {
-  const { reportId, userId, username, couponId, couponCode, dateUsed } = report
+  const { id, userId, username, couponId, couponCode, dateUsed } = report
 
   return isTable ? (
     <tr className="report-row">
-      <td>{reportId}</td>
+      <td>{id}</td>
       <td>{userId}</td>
       <td>{username}</td>
       <td>{couponId}</td>
@@ -12,7 +12,7 @@ export function ReportPreview({ report, isTable }) {
     </tr>
   ) : (
     <div className="report-card">
-      <p className="report-item">Report ID: {reportId}</p>
+      <p className="report-item">Report ID: {id}</p>
       <p className="report-item">User ID: {userId}</p>
       <p className="report-item">Username: {username}</p>
       <p className="report-item">Coupon ID: {couponId}</p>

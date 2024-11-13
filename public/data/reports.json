@@ -1,82 +1,135 @@
-[
-  {
-    "reportId": 1,
-    "userId": 1,
-    "username": "lionheart",
-    "couponId": 1,
-    "couponCode": "DISCOUNT10",
-    "dateUsed": "10/10/2024"
-  },
-  {
-    "reportId": 2,
-    "userId": 2,
-    "username": "skywalker",
-    "couponId": 2,
-    "couponCode": "SAVE20",
-    "dateUsed": "05/11/2024"
-  },
-  {
-    "reportId": 3,
-    "userId": 3,
-    "username": "riverstone",
-    "couponId": 3,
-    "couponCode": "SUMMER15",
-    "dateUsed": "09/10/2024"
-  },
-  {
-    "reportId": 4,
-    "userId": 4,
-    "username": "sunshine",
-    "couponId": 4,
-    "couponCode": "WELCOME5",
-    "dateUsed": "07/10/2024"
-  },
-  {
-    "reportId": 5,
-    "userId": 5,
-    "username": "bluejay",
-    "couponId": 5,
-    "couponCode": "FREESHIP",
-    "dateUsed": "08/10/2024"
-  },
-  {
-    "reportId": 6,
-    "userId": 6,
-    "username": "eagleeye",
-    "couponId": 6,
-    "couponCode": "VIP25",
-    "dateUsed": "06/10/2024"
-  },
-  {
-    "reportId": 7,
-    "userId": 7,
-    "username": "stormbringer",
-    "couponId": 7,
-    "couponCode": "HOLIDAY50",
-    "dateUsed": "04/10/2024"
-  },
-  {
-    "reportId": 8,
-    "userId": 8,
-    "username": "forestfire",
-    "couponId": 8,
-    "couponCode": "FLASH30",
-    "dateUsed": "03/10/2024"
-  },
-  {
-    "reportId": 9,
-    "userId": 9,
-    "username": "moondust",
-    "couponId": 9,
-    "couponCode": "STUDENT20",
-    "dateUsed": "02/10/2024"
-  },
-  {
-    "reportId": 10,
-    "userId": 10,
-    "username": "sandstorm",
-    "couponId": 10,
-    "couponCode": "BLACKFRIDAY",
-    "dateUsed": "01/10/2024"
-  }
-]
+{
+  "createdByUser": [
+    {
+      "id": 1,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 3,
+      "couponCode": "SUMMER15",
+      "dateUsed": "02/11/2023 14:35"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 7,
+      "couponCode": "HOLIDAY50",
+      "dateUsed": "20/12/2023 10:15"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 1,
+      "couponCode": "DISCOUNT10",
+      "dateUsed": "05/05/2023 17:40"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 10,
+      "couponCode": "BLACKFRIDAY",
+      "dateUsed": "25/11/2023 08:20"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 5,
+      "couponCode": "FREESHIP",
+      "dateUsed": "15/01/2024 09:10"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 2,
+      "couponCode": "SAVE20",
+      "dateUsed": "22/02/2024 13:25"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 8,
+      "couponCode": "FLASH30",
+      "dateUsed": "30/03/2024 16:50"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "username": "lionheart",
+      "couponId": 9,
+      "couponCode": "STUDENT20",
+      "dateUsed": "18/04/2024 12:05"
+    }
+  ],
+
+  "createdWithinDateRange": [
+    {
+      "id": 1,
+      "userId": 3,
+      "username": "riverstone",
+      "couponId": 4,
+      "couponCode": "WELCOME5",
+      "dateUsed": "15/03/2024 11:50"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "username": "skywalker",
+      "couponId": 2,
+      "couponCode": "SAVE20",
+      "dateUsed": "17/03/2024 09:30"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "username": "sunshine",
+      "couponId": 8,
+      "couponCode": "FLASH30",
+      "dateUsed": "19/03/2024 14:00"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "username": "bluejay",
+      "couponId": 9,
+      "couponCode": "STUDENT20",
+      "dateUsed": "21/03/2024 10:45"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "username": "riverstone",
+      "couponId": 1,
+      "couponCode": "DISCOUNT10",
+      "dateUsed": "23/03/2024 10:15"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "username": "skywalker",
+      "couponId": 3,
+      "couponCode": "SUMMER15",
+      "dateUsed": "25/03/2024 08:25"
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "username": "sunshine",
+      "couponId": 5,
+      "couponCode": "FREESHIP",
+      "dateUsed": "27/03/2024 11:30"
+    },
+    {
+      "id": 8,
+      "userId": 5,
+      "username": "bluejay",
+      "couponId": 10,
+      "couponCode": "BLACKFRIDAY",
+      "dateUsed": "29/03/2024 09:40"
+    }
+  ]
+}

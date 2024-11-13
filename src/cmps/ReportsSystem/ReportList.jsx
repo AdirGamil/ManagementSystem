@@ -1,13 +1,10 @@
 import { ReportPreview } from './ReportPreview'
 
-export function ReportList({ reports }) {
+export function ReportList({ reports, title }) {
   return (
     <div className="report-list">
-      <div className="report-cards">
-        {reports.map((report) => (
-          <ReportPreview key={report.id} report={report} isTable={false} />
-        ))}
-      </div>
+      <h2>{title}</h2>
+
       <table className="report-table">
         <thead>
           <tr>
@@ -25,6 +22,12 @@ export function ReportList({ reports }) {
           ))}
         </tbody>
       </table>
+
+      <div className="report-cards">
+        {reports.map((report) => (
+          <ReportPreview key={report.id} report={report} isTable={false} />
+        ))}
+      </div>
     </div>
   )
 }
