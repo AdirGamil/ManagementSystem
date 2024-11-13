@@ -17,7 +17,7 @@
     font-size: rem(24px);
     color: $clr-white;
   }
-  
+
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -59,7 +59,7 @@
     &-menu-icon {
       display: none;
     }
-    
+
     .navbar-links {
       background: none;
       display: flex;
@@ -67,14 +67,14 @@
       color: $clr-white;
       position: static;
       gap: rem(20px);
-      
+
       :hover {
         font-weight: bold;
       }
-      
+
       .navbar-login {
         margin-top: 0;
-        
+
         a {
           border: rem(1px) solid $clr-white;
           color: $clr-white;
