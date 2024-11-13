@@ -24,6 +24,7 @@ export function Reports() {
       <h1 className="reports-page-title">Reports System</h1>
       <ReportFilter />
       <ReportList title="Coupons by User" reports={reportsByUser} />
+      <ExcelButton />
       <ReportList title="Coupons by Date Range" reports={reportsByDateRange} />
       <ExcelButton />
     </div>
