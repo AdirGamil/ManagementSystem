@@ -2,23 +2,32 @@ import { useEffect, useRef } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import toast from 'react-hot-toast'
 
+/**
+ * CouponEdit component displays a dialog for editing a coupon.
+ * It allows the coupon to be saved or deleted.
+ */
 export function CouponEdit({ initialData, onClose }) {
+  // Reference to the dialog element
   const dialogRef = useRef(null)
 
+  // Show the dialog when the component is mounted
   useEffect(() => {
     dialogRef.current.showModal()
   }, [])
 
+  // Close the dialog and call the onClose callback
   function handleClose() {
     dialogRef.current.close()
     if (onClose) onClose()
   }
 
+  // Save the coupon and close the dialog
   function handleSave() {
     toast.success('Coupon saved successfully!')
     handleClose()
   }
 
+  // Delete the coupon and close the dialog
   function handleDelete() {
     toast.success('Coupon deleted successfully!')
     handleClose()
