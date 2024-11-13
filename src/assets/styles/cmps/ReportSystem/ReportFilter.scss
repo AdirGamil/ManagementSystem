@@ -1,0 +1,61 @@
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $clr-grey;
+  border-radius: rem(16px);
+  padding: rem(10px);
+  max-width: 80%;
+  margin: 0 auto;
+
+  .filter-fields {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10px);
+    width: 100%;
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: rem(10px);
+      }
+
+      input[type='text'],
+      input[type='date'] {
+        padding: rem(10px) rem(10px);
+        border: 1px solid lighten($clr-grey, 40%);
+        border-radius: rem(16px);
+        color: $clr-text;
+      }
+    }
+  }
+
+  .filter-submit {
+    background-color: $clr-primary;
+    color: $clr-white;
+    border-radius: rem(16px);
+    padding: rem(10px);
+    margin-top: rem(20px);
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: rem(12px) rem(20px);
+    border-radius: rem(80px);
+    max-width: fit-content;
+
+    .filter-fields {
+      flex-direction: row;
+      gap: rem(16px);
+      align-items: center;
+    }
+
+    .filter-submit {
+      margin: 0;
+      padding: rem(20px);
+      border-radius: 50%;
+    }
+  }
+}
