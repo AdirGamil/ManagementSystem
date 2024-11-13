@@ -1,0 +1,14 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.excel-button {
+  padding: rem(10px) rem(20px);
+  color: $clr-white;
+  background-color: $clr-primary;
+  border-radius: rem(8px);
+  font-weight: bold;
+}

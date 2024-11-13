@@ -12,12 +12,11 @@ export function ReportFilter() {
     <form onSubmit={handleApplyFilters} className="filter-form">
     <div className="filter-fields">
         <div className="filter-group">
-            <label htmlFor="userFilter">User ID:</label>
+            <label htmlFor="userFilter">User:</label>
             <input
                 type="text"
                 id="userFilter"
-                placeholder="Enter User ID"
-                required
+                placeholder="Enter User ID / Username"
             />
         </div>
         <div className="filter-group">

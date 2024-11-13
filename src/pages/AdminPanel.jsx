@@ -21,6 +21,9 @@ export function AdminPanel() {
         <Link to="/coupons" className="admin-link" title="Manage Coupons">
           Manage Coupons
         </Link>
+        <Link to="/reports" className="admin-link" title="Manage Reports">
+          Manage Reports
+        </Link>
       </div>
 
       <button onClick={handleLogout} className="logout-button" title="Logout">

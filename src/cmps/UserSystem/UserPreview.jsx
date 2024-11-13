@@ -3,7 +3,6 @@ import { toast } from 'react-hot-toast'
 import { UserEdit } from './UserEdit'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 
-
 export function UserPreview({
   id,
   username,
@@ -26,8 +25,6 @@ export function UserPreview({
     setIsEditOpen((prev) => !prev)
   }
 
-
-  // Deletes the user
   function handleDelete() {
     toast.success('User deleted successfully!')
   }
@@ -35,12 +32,24 @@ export function UserPreview({
   return (
     <div className="user-preview">
       <div className="user-info">
-        <p>ID: {id}</p>
-        <p>Username: {username}</p>
-        <p>Password: {password}</p>
-        <p>Registration Date: {registrationDate}</p>
-        <p>Last Login Date: {lastLoginDate}</p>
-        <p>Role: {role}</p>
+        <p>
+          <strong>ID:</strong> {id}
+        </p>
+        <p>
+          <strong>Username:</strong> {username}
+        </p>
+        <p>
+          <strong>Password:</strong> {password}
+        </p>
+        <p>
+          <strong>Registration Date:</strong> {registrationDate}
+        </p>
+        <p>
+          <strong>Last Login Date:</strong> {lastLoginDate}
+        </p>
+        <p>
+          <strong>Role:</strong> {role}
+        </p>
       </div>
       <div className="button-group">
         <button onClick={toggleEdit} title="Edit User" className="edit-button">
