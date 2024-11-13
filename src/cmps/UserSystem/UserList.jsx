@@ -2,9 +2,17 @@ import { useState } from 'react'
 import { UserPreview } from './UserPreview'
 import { UserEdit } from './UserEdit'
 
+/**
+ * A list of users in the system. Each user is represented by a UserPreview
+ * component. The component also includes a button to add a new user, which
+ * opens a UserEdit dialog for adding a new user.
+ */
 export function UserList({ users }) {
   const [isAddOpen, setIsAddOpen] = useState(false)
 
+  /**
+   * Toggles the add user dialog on and off
+   */
   function toggleAddUser() {
     setIsAddOpen((prev) => !prev)
   }
@@ -32,7 +40,14 @@ export function UserList({ users }) {
       </div>
 
       {/* Add user dialog */}
-      {isAddOpen && <UserEdit initialData={{}} onClose={toggleAddUser} />}
+      {isAddOpen && (
+        <UserEdit
+          // Pass an empty object as the initial data
+          initialData={{}}
+          // Close the dialog when it's closed
+          onClose={toggleAddUser}
+        />
+      )}
     </div>
   )
 }

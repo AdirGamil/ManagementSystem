@@ -3,6 +3,10 @@ import { toast } from 'react-hot-toast'
 import { UserEdit } from './UserEdit'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 
+/**
+ * A single user preview component. It displays the user's data and allows
+ * to edit or delete the user.
+ */
 export function UserPreview({
   id,
   username,
@@ -21,12 +25,19 @@ export function UserPreview({
     lastLoginDate,
   }
 
+  //  Toggle the edit state
+
   function toggleEdit() {
     setIsEditOpen((prev) => !prev)
   }
 
+  /**
+   * Handle the delete button click by showing a toast message and
+   * closing the edit dialog if it was open.
+   */
   function handleDelete() {
     toast.success('User deleted successfully!')
+    if (isEditOpen) toggleEdit()
   }
 
   return (

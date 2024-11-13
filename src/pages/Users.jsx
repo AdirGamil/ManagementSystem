@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { UserList } from '../cmps/UserSystem/UserList'
 import { fetchUsers } from '../services/user.service'
 
+// Fetches users on mount and renders `UserList` with data.
 export function Users() {
   const [users, setUsers] = useState([])
 

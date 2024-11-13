@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import { FaTimes, FaEye, FaEyeSlash } from 'react-icons/fa'
 import { toast } from 'react-hot-toast'
 
+/**
+ * A dialog for editing a user. The dialog shows the user's details and
+ * allows the user to be saved or deleted.
+ */
 export function UserEdit({ initialData = {}, onClose }) {
   const dialogRef = useRef(null)
   const isEdit = !!initialData.username
@@ -28,6 +32,7 @@ export function UserEdit({ initialData = {}, onClose }) {
     handleClose()
   }
 
+  // Toggle the password field to show or hide the password.
   function togglePasswordVisibility() {
     setShowPassword((prev) => !prev)
   }
