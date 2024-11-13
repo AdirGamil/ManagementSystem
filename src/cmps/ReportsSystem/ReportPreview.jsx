@@ -2,6 +2,7 @@ export function ReportPreview({ report, isTable }) {
   const { id, userId, username, couponId, couponCode, dateUsed } = report
 
   return isTable ? (
+    // Render a table row
     <tr className="report-row">
       <td>{id}</td>
       <td>{userId}</td>
@@ -11,6 +12,7 @@ export function ReportPreview({ report, isTable }) {
       <td>{dateUsed}</td>
     </tr>
   ) : (
+    // Render a card
     <div className="report-card">
       <p className="report-item">
         <strong>Report ID:</strong> {id}
@@ -33,3 +35,4 @@ export function ReportPreview({ report, isTable }) {
     </div>
   )
 }
+

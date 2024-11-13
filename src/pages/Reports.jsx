@@ -4,6 +4,12 @@ import { ReportList } from '../cmps/ReportsSystem/ReportList'
 import { ReportFilter } from '../cmps/ReportsSystem/ReportFilter'
 import { ExcelButton } from '../cmps/ReportsSystem/ExcelButton'
 
+/*
+Reports page component displays two report lists: one for coupons used by
+user and one for coupons used within a date range. The component also
+includes a filter form for selecting the date range.
+ */
+
 export function Reports() {
   const [reportsByUser, setReportsByUser] = useState([])
   const [reportsByDateRange, setReportsByDateRange] = useState([])

@@ -1,10 +1,13 @@
 import { ReportPreview } from './ReportPreview'
 
+/**
+ * ReportList component renders a list of reports in both table and card formats.
+ */
 export function ReportList({ reports, title }) {
   return (
     <div className="report-list">
       <h2>{title}</h2>
-
+      {/* Render reports in a table format */}
       <table className="report-table">
         <thead>
           <tr>
@@ -23,6 +26,7 @@ export function ReportList({ reports, title }) {
         </tbody>
       </table>
 
+      {/* Render reports in a card format */}
       <div className="report-cards">
         {reports.map((report) => (
           <ReportPreview key={report.id} report={report} isTable={false} />
